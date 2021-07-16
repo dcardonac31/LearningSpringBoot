@@ -1,4 +1,4 @@
-package com.contacto.inicio;
+package com.clientecontacto;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
