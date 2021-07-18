@@ -33,8 +33,8 @@ public class ContactosController {
 	}
 	
 	@PostMapping(value="contactos", consumes=MediaType.APPLICATION_JSON_VALUE, produces=MediaType.TEXT_PLAIN_VALUE)
-	public String guardarContacto(@RequestBody Contacto contacto) {
-		return String.valueOf(service.agregarContacto(contacto));
+	public void guardarContacto(@RequestBody Contacto contacto) throws Exception{
+		service.agregarContacto(contacto);
 	}
 	
 	@PutMapping(value="contactos", consumes=MediaType.APPLICATION_JSON_VALUE)
