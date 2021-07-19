@@ -6,7 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@ComponentScan(basePackages = {"com.contacto.controller","com.contacto.dao","com.contacto.service"})
+@ComponentScan(basePackages = {
+		"com.contacto.controller",
+		"com.contacto.dao",
+		"com.contacto.service",
+		"com.contacto.inicio"
+		})
 @EntityScan(basePackages = {"com.contacto.model"})
 @EnableJpaRepositories(basePackages = {"com.contacto.dao"})
 @SpringBootApplication
